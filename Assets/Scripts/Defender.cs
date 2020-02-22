@@ -6,7 +6,7 @@ public class Defender : MonoBehaviour
 {
     public bool isPlayer = true;
     private bool isDefend = false;
-    public int defense = 300;
+    public int defense;
     [HideInInspector]
     public int underAttack;
     private float timer = 0;
@@ -30,7 +30,6 @@ public class Defender : MonoBehaviour
     {
         if (isDefend)
         {
-            //attack
             timer += Time.deltaTime;
             if (timer > 0.6f)
             {

@@ -6,8 +6,8 @@ public class Attacker : MonoBehaviour
 {
     public bool isPlayer = true;
     private bool isMove = true;
-    public int attack = 100;
-    public int defense = 200;
+    public int attack;
+    public int defense;
     [HideInInspector]
     public int underAttack;
     private float timer = 0;
@@ -93,6 +93,7 @@ public class Attacker : MonoBehaviour
         }
         if (defense <= 0)
         {
+            
             Destroy(gameObject);
         }
         if (transform.position.x > 9 || transform.position.x < -9)
@@ -108,6 +109,8 @@ public class Attacker : MonoBehaviour
             isMove = false;
             Attacker m = collision.gameObject.GetComponent<Attacker>();
             if (m != null) m.underAttack = attack;
+            Defender d = collision.gameObject.GetComponent<Defender>();
+            if (d != null) d.underAttack = attack;
         }
     }
 

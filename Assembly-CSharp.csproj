@@ -67,6 +67,11 @@
     <Compile Include="Assets\Scripts\DataGame.cs" />
     <Compile Include="Assets\Scripts\Defender.cs" />
     <Compile Include="Assets\Scripts\Destroyed.cs" />
+    <Compile Include="Assets\Scripts\DragnDrop.cs" />
+    <Compile Include="Assets\Scripts\Ending.cs" />
+    <Compile Include="Assets\Scripts\EnemyAcak.cs" />
+    <Compile Include="Assets\Scripts\MembuatItem.cs" />
+    <Compile Include="Assets\Scripts\UiController.cs" />
     <Reference Include="Unity.Timeline.Editor">
       <HintPath>D:/DICODING GAME/Game Tower Defense/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
     </Reference>

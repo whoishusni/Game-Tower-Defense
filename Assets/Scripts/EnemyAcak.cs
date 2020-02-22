@@ -6,7 +6,7 @@ public class EnemyAcak : MonoBehaviour
 {
     float timer = 0;
     public GameObject enemy;
-    public float delayEnemy = 6f;
+    public float delayEnemy = 8f;
 
     // Update is called once per frame
     void Update()
