@@ -14,10 +14,12 @@ public class Attacker : MonoBehaviour
     private float posYLawan;
     private bool isCari = false;
     private string nameTagLawan;
+    private Animator anim;
 
     
     void Start()
     {
+        anim = GetComponent<Animator>();
         if (isPlayer)
         {
             nameTagLawan = "Enemy";
@@ -35,6 +37,8 @@ public class Attacker : MonoBehaviour
         {
             if (isMove)
             {
+                anim.ResetTrigger("attack");
+                anim.SetTrigger("walk");
                 transform.position += transform.right * Time.deltaTime * 0.5f;
                 if (transform.position.y > (posYLawan + 0.1f) && isCari)
                 {
@@ -47,7 +51,8 @@ public class Attacker : MonoBehaviour
             }
             else
             {
-               
+                anim.SetTrigger("attack");
+                anim.ResetTrigger("walk");
                 timer += Time.deltaTime;
                 if (timer > 0.6f)
                 {
@@ -65,6 +70,8 @@ public class Attacker : MonoBehaviour
         {
             if (isMove)
             {
+                anim.ResetTrigger("attack");
+                anim.SetTrigger("walk");
                 transform.position -= transform.right * Time.deltaTime * 0.5f;
                 if (transform.position.y > (posYLawan + 0.1f) && isCari)
                 {
@@ -77,10 +84,12 @@ public class Attacker : MonoBehaviour
             }
             else
             {
-               
+                anim.SetTrigger("attack");
+                anim.ResetTrigger("walk");
                 timer += Time.deltaTime;
                 if (timer > 0.6f)
                 {
+                    anim.SetTrigger("attack");
                     defense -= underAttack;
                     transform.localScale = new Vector3(1, 1f);
                     timer = 0;
