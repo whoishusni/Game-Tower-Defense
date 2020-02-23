@@ -17,10 +17,13 @@ public class Attacker : MonoBehaviour
     private bool isCari = false;
     private string nameTagLawan;
     private Animator anim;
+    private AudioSource audioSource;
+    public AudioClip audioClipSword;
 
     
     void Start()
     {
+        audioSource = GetComponent<AudioSource>();
         anim = GetComponent<Animator>();
         if (isPlayer)
         {
@@ -53,6 +56,7 @@ public class Attacker : MonoBehaviour
             }
             else
             {
+                audioSource.PlayOneShot(audioClipSword);
                 anim.SetTrigger("attack");
                 anim.ResetTrigger("walk");
                 timer += Time.deltaTime;
@@ -86,6 +90,8 @@ public class Attacker : MonoBehaviour
             }
             else
             {
+               
+                audioSource.PlayOneShot(audioClipSword);
                 anim.SetTrigger("attack");
                 anim.ResetTrigger("walk");
                 timer += Time.deltaTime;

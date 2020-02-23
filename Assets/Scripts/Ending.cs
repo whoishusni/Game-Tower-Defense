@@ -40,13 +40,15 @@ public class Ending : MonoBehaviour
 
     public void retryGame()
     {
-        SceneManager.LoadScene("GamePlay");
+        SceneManager.LoadScene("LoadingScene");
         DataGame.isGameOver = false;
         DataGame.isComplete = false;
     }
     public void quitGame()
     {
         SceneManager.LoadScene("MenuUtama");
+        DataGame.isGameOver = false;
+        DataGame.isComplete = false;
     }
     public void exitGame()
     {

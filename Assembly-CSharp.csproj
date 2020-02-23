@@ -70,6 +70,7 @@
     <Compile Include="Assets\Scripts\DragnDrop.cs" />
     <Compile Include="Assets\Scripts\Ending.cs" />
     <Compile Include="Assets\Scripts\EnemyAcak.cs" />
+    <Compile Include="Assets\Scripts\Loading.cs" />
     <Compile Include="Assets\Scripts\MembuatItem.cs" />
     <Compile Include="Assets\Scripts\UiController.cs" />
     <Reference Include="Unity.Timeline.Editor">

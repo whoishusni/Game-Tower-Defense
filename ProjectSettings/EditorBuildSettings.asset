@@ -9,6 +9,9 @@ EditorBuildSettings:
     path: Assets/Scenes/MenuUtama.unity
     guid: 58d8a290ffa20b24b8d384e0c0b377bc
   - enabled: 1
+    path: Assets/Scenes/LoadingScene.unity
+    guid: d6b6af822f4a6a84699bd3699dd14b84
+  - enabled: 1
     path: Assets/Scenes/Gameplay.unity
     guid: 2cda990e2423bbf4892e6590ba056729
   - enabled: 1
