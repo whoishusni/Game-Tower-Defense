@@ -279,7 +279,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isPlayer: 1
   attack: 300
-  defense: 300
+  defense: 500
   underAttack: 0
 --- !u!114 &5799254514784053850
 MonoBehaviour:

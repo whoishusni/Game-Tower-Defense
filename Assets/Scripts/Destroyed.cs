@@ -12,13 +12,13 @@ public class Destroyed : MonoBehaviour
             {
                 DataGame.isGameOver = true;
                 DataGame.isComplete = false;
-                Debug.Log("Player Lost");
+                Debug.Log("Player Kalah");
             }
             else
             {
                 DataGame.isGameOver = true;
                 DataGame.isComplete = true;
-                Debug.Log("Player Win");
+                Debug.Log("Player Menang");
             }
     }
 }

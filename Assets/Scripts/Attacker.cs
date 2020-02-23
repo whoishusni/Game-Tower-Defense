@@ -11,6 +11,8 @@ public class Attacker : MonoBehaviour
     [HideInInspector]
     public int underAttack;
     private float timer = 0;
+    private float delayDestroy = 2;
+    private float timerDelay = 0;
     private float posYLawan;
     private bool isCari = false;
     private string nameTagLawan;
@@ -102,8 +104,18 @@ public class Attacker : MonoBehaviour
         }
         if (defense <= 0)
         {
-            
+            /*anim.ResetTrigger("walk");
+            anim.ResetTrigger("attack");
+            anim.SetTrigger("dead");
+            timerDelay += Time.deltaTime;
+            if(timerDelay == delayDestroy)
+            {
+                Destroy(gameObject);
+                timerDelay = 0;
+
+            }*/
             Destroy(gameObject);
+
         }
         if (transform.position.x > 9 || transform.position.x < -9)
         {
