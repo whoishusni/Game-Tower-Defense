@@ -317,7 +317,6 @@ GameObject:
   - component: {fileID: 299482588}
   - component: {fileID: 299482587}
   - component: {fileID: 299482590}
-  - component: {fileID: 299482589}
   m_Layer: 0
   m_Name: Outpost (1)
   m_TagString: Player
@@ -436,19 +435,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1.38, y: 1.98}
   m_EdgeRadius: 0
---- !u!114 &299482589
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 299482584}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 16a54fc3ccc420c42b3c1c1e74ed034b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  isPlayer: 1
 --- !u!114 &299482590
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -477,7 +463,6 @@ GameObject:
   - component: {fileID: 372076441}
   - component: {fileID: 372076440}
   - component: {fileID: 372076443}
-  - component: {fileID: 372076442}
   m_Layer: 0
   m_Name: Outpost
   m_TagString: Player
@@ -596,19 +581,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 7
---- !u!114 &372076442
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 372076437}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 16a54fc3ccc420c42b3c1c1e74ed034b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  isPlayer: 1
 --- !u!114 &372076443
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -874,7 +846,6 @@ GameObject:
   - component: {fileID: 830825359}
   - component: {fileID: 830825358}
   - component: {fileID: 830825360}
-  - component: {fileID: 830825361}
   m_Layer: 0
   m_Name: Outpost (3)
   m_TagString: Enemy
@@ -1008,19 +979,6 @@ MonoBehaviour:
   isPlayer: 0
   defense: 1000
   underAttack: 0
---- !u!114 &830825361
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 830825355}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 16a54fc3ccc420c42b3c1c1e74ed034b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  isPlayer: 0
 --- !u!1 &1030547790
 GameObject:
   m_ObjectHideFlags: 0
@@ -1348,7 +1306,6 @@ GameObject:
   - component: {fileID: 1392550028}
   - component: {fileID: 1392550027}
   - component: {fileID: 1392550029}
-  - component: {fileID: 1392550030}
   m_Layer: 0
   m_Name: Outpost (2)
   m_TagString: Enemy
@@ -1482,19 +1439,6 @@ MonoBehaviour:
   isPlayer: 0
   defense: 1000
   underAttack: 0
---- !u!114 &1392550030
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1392550024}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 16a54fc3ccc420c42b3c1c1e74ed034b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  isPlayer: 0
 --- !u!1 &1414749064
 GameObject:
   m_ObjectHideFlags: 0
@@ -1524,6 +1468,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1d554b4135afb6b49aed1c2703a507ce, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  info: {fileID: 0}
 --- !u!4 &1414749066
 Transform:
   m_ObjectHideFlags: 0
